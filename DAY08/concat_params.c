@@ -5,7 +5,7 @@
  ** Login   <faurest.lupine@epitech.eu>
  ** 
  ** Started on  mer. oct. 11 13:53:07 2017 Faurest Lupine
-** Last update mer. oct. 11 17:04:20 2017 Faurest Lupine
+** Last update jeu. oct. 12 15:11:36 2017 Faurest Lupine
  */
 
 #include "libmy.h"
@@ -32,7 +32,7 @@ char	*concat_params(int argc, char **argv)
 	while(i < argc)
 	{
 		my_strcat(memoire, argv[i]);
-		if(i < argc)
+		if(i < argc && my_strlen(argv[i]) > 0)
 			my_strcat(memoire, "\n");
 		i++;
 	}
